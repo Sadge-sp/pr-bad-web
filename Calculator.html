@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calstyle.css" />
+  </head>
+  <body>
+    <div id="Calculator">
+      <input id="display" readonly />
+      <div id="keys">
+        <button onclick="ClearDisplay()" class="c">C</button>
+        <button onclick="disp0('%')" class="operators">%</button>
+        <button onclick="polar()" class="operators">+/-</button>
+        <button onclick="disp0('/')" class="operators">/</button>
+        <button onclick="disp('7')">7</button>
+        <button onclick="disp('8')">8</button>
+        <button onclick="disp('9')">9</button>
+        <button onclick="disp0('*')" class="operators">*</button>
+        <button onclick="disp('4')">4</button>
+        <button onclick="disp('5')">5</button>
+        <button onclick="disp('6')">6</button>
+        <button onclick="disp0('-')" class="operators">-</button>
+        <button onclick="disp('1')">1</button>
+        <button onclick="disp('2')">2</button>
+        <button onclick="disp('3')">3</button>
+        <button onclick="disp0('+')" class="operators">+</button>
+        <button onclick="disp('0')">0</button>
+        <button onclick="disp0('.')">.</button>
+        <button onclick="destroy()">⌫</button>
+        <button onclick="calculate()" class="eq">=</button>
+      </div>
+    </div>
+    <script src="calcmath.js"></script>
+  </body>
+</html>
